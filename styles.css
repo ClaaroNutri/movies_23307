@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@100;400&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:rgb(65, 65, 68);
+    font-family: 'Anton', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
+}
+nav{
+    background-color: rgb(37, 31, 31);
+    height: 80px;
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {max-width: 1400px;
+    /*display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 35px;
+    column-gap: 20px;
+}
+
+.contenedor img {border-radius: 12px;
+    box-shadow: 3px 2px 3px rgb(95, 126, 126);
+   width: 300;
+   height: 450px;
+}
+.contenedor img:hover {
+    transform: scale(0.9);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.contenedor h3:hover {filter: drop-shadow(1px 1px 1px cyan);
+    color:rgb(95, 126, 126);
+}
+
+.paginacion {position: fixed;
+    top:90%;
+    left:50%;
+    translate: (-90%, -50%); 
+}
+
+h1 {text-align: center;
+    color:rgb(95, 126, 126);
+    margin: 15px;
+    filter:drop-shadow(2px 2px 2px cyan);
+    font-weight: 400;
+    
+}
+h1:hover{
+    color: aqua;
+}
+
+#btnAnterior, #btnSiguiente {
+    margin:12px;
+    color: black !important;
+    font-weight:bold;
+    font-size:medium;
+    width: 120px;
+    height: 40px;
+    letter-spacing: 0.1rem;
+    background-color: rgb(122, 244, 253);
+    padding:8px;
+    border:none;
+    border-radius: 12px;
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 
+}
+
+
+
+#btnAnterior:hover {
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 
+    0 0 50px cyan, 
+    0 0 100px cyan,
+    0 0 200px cyan;
+    border: 1px solid rgb(95, 126, 126);
+    cursor: pointer;
+}
+
+#btnSiguiente:hover {
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
+    0 0 200px cyan;
+    border: 1px solid rgb(95, 126, 126);
+    cursor: pointer;
+}
+
+footer{ margin-top:25px;
+    height: 80px;
+    background-color: rgb(37, 31, 31);
+    text-align: center;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+ 
+    
+}
+footer a{
+    color: rgb(95, 126, 126);
+    filter:drop-shadow(2px 2px 2px cyan);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: larger;
+    margin-right: 30px;
+
+}
+footer a:hover{
+    color:aqua;
+}
+
+@media (max-width: 480px){
+    .paginacion {
+        display:flex;
+        top:90%;
+        left:20%;
+        translate: (-80%, -20%);
+        
+    }
+    #btnAnterior, #btnSiguiente{
+        width: 100px;
+    }
+}
+    
