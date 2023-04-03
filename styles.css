@@ -132,13 +132,16 @@ footer a:hover{
 @media (max-width: 480px){
     .paginacion {
         display:flex;
-        top:90%;
+        top:85%;
         left:20%;
-        translate: (-80%, -20%);
+        translate: (-85%, -20%);
         
     }
     #btnAnterior, #btnSiguiente{
         width: 100px;
+    }
+    .contenedor{
+        gap:35px;
     }
 }
     
